@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+  Calculator
+  </title>
+  </head>
+  <body>
+  </body>
+  <script>
+  function main(){
+  var num1=parseInt(prompt("Enter 1st number"));
+  var num2=parseInt(prompt("Enter 2nd number"));
+  var op=prompt("Enter operator :");
+  document.write("number1:"+num1+"<br>");
+  document.write("number2:"+num2+"<br>");
+  switch (op){
+  case '+':
+  sum_two_numbers(num1,num2);
+  //document.write("sum: "+sum_two_numbers(num1,num2)+"<br>");
+  break;
+  case'-':
+  doument.write("difference: "+sub_two_numbers(num1,num2)+"<br>");
+  break;
+  case'*':
+  document.write("prodct: "+product_two_numbers(num1,num2)+"<br>");
+  break;
+  case'/':
+  document.write("div: "+div_two_numbers(num1,num2)+"<br>");
+  break;
+  default:
+  document.write("Invalid Operator");
+  }
+  }
+  main();
+  function sum_two_numbers(num1,num2){
+  var sum=num1+num2;
+  document.write("sum: "+sum);
+  }
+  function sub_two_numbers(num1,num2){
+  var difference=num1-num2;
+  return difference;
+  }
+  function product_two_numbers(num1,num2){
+  var product=num1*num2;
+  return product;
+  }
+  function div_two_numbers(num1,num2){
+  var div=num1/num2;
+  return div;
+  }
+  </script>
+  </html>
